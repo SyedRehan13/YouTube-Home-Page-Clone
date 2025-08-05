@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>YouTube.com Clone</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="left-section">
+            <img class="hamburger-menu" src="icons/hamburger-menu.svg">
+            <a href="https://www.youtube.com/" target="_blank">
+                <img class="youtube-logo" src="icons/youtube-logo.svg">
+            </a>
+        </div>
+        <div class="middle-section">
+            <input class="search-bar" type="text" name="search" placeholder="Search">
+            <button class="search-button">
+                <img class="search-icon" src="icons/search.svg">
+                <div class="tooltip"> Search </div>
+            </button>
+
+            <button class="voice-search-button">
+                <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+                <div class="tooltip"> Search with your voice </div>
+            </button>
+        </div>
+        <div class="right-section">
+            <div class="upload-icon-container">
+                <a href="https://studio.youtube.com/channel/UCI43WSTbrpHGOYMQHcg7cmg/videos?d=ud" target="_blank">
+                    <img class="upload-icon" src="icons/upload.svg">
+                </a>
+                <div class="tooltip"> Create </div>
+            </div>
+            <div class="youtube-apps-container">
+                <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+                <div class="tooltip"> YouTube Apps </div>
+            </div>
+
+            <div class="notifications-icon-container">
+                <img class="notifications-icon" src="icons/notifications.svg">
+                <div class="tooltip"> Notifications </div>
+                <div class="notifications-count"> 3 </div>
+            </div>
+            <a href="https://www.youtube.com/@syedrehanamir7878" target="_blank">
+                <img class="current-user-picture" src="channel-pictures/profile-picture.jpg">
+            </a>
+        </div>
+    </header>
+    <!--Put position absolute inside 
+    position relative-->
+    <nav class="sidebar">
+        <div class="sidebar-link">
+            <a href="https://www.youtube.com/" target="_blank">
+                <img src="icons/home.svg">
+            </a>
+            <div>Home</div>
+        </div>
+        <div class="sidebar-link">
+            <a href="https://www.youtube.com/shorts" target="_blank">
+                <img src="icons/youtube-shorts-logo-15253.svg">
+            </a>
+            <div> Shorts </div>
+        </div>
+        <div class="sidebar-link">
+            <a href="https://www.youtube.com/feed/subscriptions" target="_blank">
+                <img src="icons/subscriptions.svg">
+            </a>
+            <div>Subscriptions</div>
+        </div>
+        <div class="sidebar-link">
+            <a href="https://music.youtube.com/" target="_blank">
+                <img src="icons/youtube-music.svg">
+            </a>
+            <div>YouTube Music</div>
+        </div>
+        <div class="sidebar-link">
+            <a href="https://www.youtube.com/feed/you" target="_blank">
+                <img src="icons//user-image-with-black-background-svgrepo-com.svg">
+            </a>
+            <div> You </div>
+        </div>
+
+        <div class="sidebar-link">
+            <a href="https://www.youtube.com/feed/downloads" target="_blank">
+                <img src="icons/download-svgrepo-com.svg">
+            </a>
+            <div> Downloads</div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="video-grid">
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://youtu.be/n2RNcPRtAiY?si=tGSwxSSuIIl9K3eN" target="_blank">
+                        <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+                    </a>
+                    <div class="video-time"> 14:20 </div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai! </p>
+                        <p class="video-author"> Marques Brownlee <img class = "verified-icon" src = "icons/tick-circle-svgrepo-com.svg"></p>
+                        <p class="video-stats">3.4M views &#183; 6 months ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://youtu.be/mP0RAo9SKZk?si=01pPMrPaiJUPXXpm" target="_blank">
+                        <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+                    </a>
+                    <div class="video-time"> 8:22 </div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-pictures/channel-2.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Try Not To Laugh Challenge #9 </p>
+                        <p class="video-author"> Markiplier <img class = "verified-icon" src = "icons/tick-circle-svgrepo-com.svg"></p>
+                        <p class="video-stats">19M views &#183; 4 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://youtu.be/094y1Z2wpJg?si=qE_kx6QsAALW3gvB" target="_blank">
+                        <img class="thumbnail" src="thumbnails/thumbnail-3.webp">
+                    </a>
+                    <div class="video-time"> 22:08 </div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-pictures/channel-3.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">The Simplest Math Problem No One Can Solve - Collatz Conjecture </p>
+                        <p class="video-author"> Veritasium <img class = "verified-icon" src = "icons/tick-circle-svgrepo-com.svg"> </p>
+                        <p class="video-stats"> 43M views &#183; 4 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://youtu.be/86CQq3pKSUw?si=9ROUjLgI8nFG_95S" target="_blank">
+                        <img class="thumbnail" src="thumbnails/thumbnail-4.webp">
+                    </a>
+                    <div class="video-time"> 11:16 </div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-pictures/channel-4.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title"> Kadane's Algorithm to Maximum Sum Subarray Problem </p>
+                        <p class="video-author"> CS Dojo <img class = "verified-icon" src = "icons/tick-circle-svgrepo-com.svg"> </p>
+                        <p class="video-stats"> 756K views &#183; 9 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://youtu.be/6etTERFUlUI?si=CvtY8ImQBYwpWZ1l" target="_blank">
+                        <img class="thumbnail" src="thumbnails/thumbnail-5.jpg">
+                    </a>
+                    <div class="video-time"> 16:31 </div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-pictures/channel-3.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title"> The Absurd Search For Dark Matter </p>
+                        <p class="video-author"> Veritasium <img class = "verified-icon" src = "icons/tick-circle-svgrepo-com.svg"> </p>
+                        <p class="video-stats"> 10M views &#183; 3 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://youtu.be/f2vpuTU7sio?si=wK4xU9XwjGe99aUX" target="_blank">
+                        <img class="thumbnail" src="thumbnails/thumbnail-6.jpg">
+                    </a>
+                    <div class="video-time"> 25:55 </div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-pictures/channel-6.jpeg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title"> 360° Airline Pilot's View | Miami - Bahamas | American Eagle E-175 </p>
+                        <p class="video-author"> Swayne Martin <img class = "verified-icon" src = "icons/tick-circle-svgrepo-com.svg"> </p>
+                        <p class="video-stats">15M views &#183; 3 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://youtu.be/muvWwCGEYBU?si=Z2A6tYKMJWBAWYrS" target="_blank">
+                        <img class="thumbnail" src="thumbnails/muftimenk.jpg">
+                    </a>
+                    <div class="video-time"> 5:32 </div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-pictures/muftimenk.png">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title"> NEW | Mufti Menk Answers GOOGLE's top Questions! </p>
+                        <p class="video-author"> Mufti Menk <img class = "verified-icon" src = "icons/tick-circle-svgrepo-com.svg"> </p>
+                        <p class="video-stats">3.7M views &#183; 2 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://youtu.be/PKCGsf1T8ZE?si=h16V_wvHSxR5sDCb" target="_blank">
+                        <img class="thumbnail" src="thumbnails/muftimenklecture.jpg">
+                    </a>
+                    <div class="video-time"> 13:15 </div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-pictures/islamandpeace.webp">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title"> Don't Give Up! Trust Allah, He is sufficient for you. </p>
+                        <p class="video-author"> Islam & Peace</p>
+                        <p class="video-stats"> 56K views &#183; 1 year ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://youtu.be/jAve8n-mZ_0?si=sHDUqc8YEMBYvyPq" target="_blank">
+                        <img class="thumbnail" src="thumbnails/quran.jpg">
+                    </a>
+                    <div class="video-time"> 1:42 </div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-pictures/readquran.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title"> This Quran verse will find you when you need it most. </p>
+                        <p class="video-author"> Change. </p>
+                        <p class="video-stats"> 438K views &#183; 3 months ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href = "https://youtu.be/s3oykx8XfJk?si=GTIlXEV6zRp-BFhC" target="_blank">
+                        <img class="thumbnail" src="thumbnails/thumbnail-10.jpg">
+                    </a>
+                    <div class="video-time"> 34:57 </div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-pictures/channelspicture-10.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title"> I Ran Marathon in World’s Most Restricted Country | NORTH KOREA Ep-2 🇰🇵 </p>
+                        <p class="video-author"> Travel with AK <img class = "verified-icon" src = "icons/tick-circle-svgrepo-com.svg"> </p>
+                        <p class="video-stats"> 4.3M views &#183; 3 months ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://youtu.be/AIlOpMfl6Wg?si=vrw4g9xuLUYCbPqO" target="_blank">
+                        <img class="thumbnail" src="thumbnails/thumbnail-11.jpg">
+                    </a>
+                        <div class="video-time"> 25:54 </div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-pictures/channel-picture-11.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title"> What Would Dying on Every Planet Be Like? </p>
+                        <p class="video-author"> What If  <img class = "verified-icon" src = "icons/tick-circle-svgrepo-com.svg"> </p>
+                        <p class="video-stats"> 14M views &#183; 7 months ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href = "https://youtu.be/WanMngTGFwg?si=tvdc5o6ueIAkHpKp" target="_blank">
+                        <img class="thumbnail" src="thumbnails/thumbnail-12.jpg">
+                    </a>
+                    <div class="video-time"> 30:59 </div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="channel-pictures/channelspicture-10.jpg">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title"> I took a TRAIN TO BUSAN 🇰🇷 </p>
+                        <p class="video-author"> Travel with AK <img class = "verified-icon" src = "icons/tick-circle-svgrepo-com.svg"> </p>
+                        <p class="video-stats"> 598K views &#183; 9 months ago</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+</body>
+
+
+</html>
